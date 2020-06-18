@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "1a0397da-66f0-40a8-84b9-487b688d4738",
+		"name": "Salesforce API : Satyansh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generating Salesforce Access Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://Org_Name.salesforce.com/services/oauth2/token?grant_type=password&client_id=Client-ID&client_secret=Client-Secret&username=Salesforce-Username&password=Salesforce-Password",
+					"protocol": "https",
+					"host": [
+						"Org_Name",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "Client-ID"
+						},
+						{
+							"key": "client_secret",
+							"value": "Client-Secret"
+						},
+						{
+							"key": "username",
+							"value": "Salesforce-Username"
+						},
+						{
+							"key": "password",
+							"value": "Salesforce-Password"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
