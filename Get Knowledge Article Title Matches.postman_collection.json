@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "7c851495-a424-4553-8235-294697a3a6e4",
+		"name": "Get Knowledge Article Title Matches",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Knowledge Article Matching Titles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer HAUTHeePTyvUTubub8GfmG0nze9s0rdHpBJqzxr0wViw7ARvkX42wnaOKPEN4EGY.TmNPYMJeLDnk02SxJhSMHx8Wh5e5Rn"
+					}
+				],
+				"url": {
+					"raw": "https://ORG_NAME.salesforce.com/services/data/v36.0/search/suggestTitleMatches?language=en_US&publishStatus=Online&channel=pkb&q=battery",
+					"protocol": "https",
+					"host": [
+						"ORG_NAME",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v36.0",
+						"search",
+						"suggestTitleMatches"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en_US"
+						},
+						{
+							"key": "publishStatus",
+							"value": "Online"
+						},
+						{
+							"key": "channel",
+							"value": "pkb"
+						},
+						{
+							"key": "q",
+							"value": "battery"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
