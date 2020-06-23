@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "dac75599-fbdc-41af-90fa-50d9b8041bcf",
+		"name": "Get Knowledge article details",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Knowledge Article Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 60932jgufi9205230432n32fjenfeu839234328947328947329847329847329847932847",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ORG_NAME.my.salesforce.com/services/data/v38.0/support/knowledgeArticles/kA0A0000000D903KTG",
+					"protocol": "https",
+					"host": [
+						"ORG_NAME",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v38.0",
+						"support",
+						"knowledgeArticles",
+						"kA0A0000000D903KTG"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
