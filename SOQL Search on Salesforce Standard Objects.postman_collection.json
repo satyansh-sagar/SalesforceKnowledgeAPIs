@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "deef1ef1-8ad9-4095-ac35-e369f79a7567",
+		"name": "SOQL Search on Salesforce Standard Objects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SOQL Search on Salesforce Standard Objects",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3539gnrinnfweni32rfjkewnfwekj",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ORG_NAME.my.salesforce.com/services/data/v48.0/query/?q=SELECT+Id,articleNumber,TotalViewCount+from+knowledgeArticle+WHERE+Id = 'kA0A0000000H1xQQ'",
+					"protocol": "https",
+					"host": [
+						"ORG_NAME",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v48.0",
+						"query",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+Id,articleNumber,TotalViewCount+from+knowledgeArticle+WHERE+Id = 'kA0A0000000H1xQQ'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
