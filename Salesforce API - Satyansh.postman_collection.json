@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "1a0397da-66f0-40a8-84b9-487b688d4738",
+		"name": "Salesforce API : Satyansh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generating Salesforce Access Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://Org_Name.salesforce.com/services/oauth2/token?grant_type=password&client_id=Client-ID&client_secret=Client-Secret&username=Salesforce-Username&password=Salesforce-Password",
+					"protocol": "https",
+					"host": [
+						"Org_Name",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "Client-ID"
+						},
+						{
+							"key": "client_secret",
+							"value": "Client-Secret"
+						},
+						{
+							"key": "username",
+							"value": "Salesforce-Username"
+						},
+						{
+							"key": "password",
+							"value": "Salesforce-Password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Knowledge Article Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 60932jgufi9205230432n32fjenfeu839234328947328947329847329847329847932847",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ORG_NAME.my.salesforce.com/services/data/v38.0/support/knowledgeArticles/kA0A0000000D903KTG",
+					"protocol": "https",
+					"host": [
+						"ORG_NAME",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v38.0",
+						"support",
+						"knowledgeArticles",
+						"kA0A0000000D903KTG"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Knowledge Article Matching Titles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer HAUTHeePTyvUTubub8GfmG0nze9s0rdHpBJqzxr0wViw7ARvkX42wnaOKPEN4EGY.TmNPYMJeLDnk02SxJhSMHx8Wh5e5Rn",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ORG_NAME.salesforce.com/services/data/v36.0/search/suggestTitleMatches?language=en_US&publishStatus=Online&channel=pkb&q=battery",
+					"protocol": "https",
+					"host": [
+						"ORG_NAME",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v36.0",
+						"search",
+						"suggestTitleMatches"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en_US"
+						},
+						{
+							"key": "publishStatus",
+							"value": "Online"
+						},
+						{
+							"key": "channel",
+							"value": "pkb"
+						},
+						{
+							"key": "q",
+							"value": "battery"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOQL Search on Salesforce Standard Objects",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3539gnrinnfweni32rfjkewnfwekj",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ORG_NAME.my.salesforce.com/services/data/v48.0/query/?q=SELECT+Id,articleNumber,TotalViewCount+from+knowledgeArticle+WHERE+Id = 'kA0A0000000H1xQQ'",
+					"protocol": "https",
+					"host": [
+						"ORG_NAME",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v48.0",
+						"query",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT+Id,articleNumber,TotalViewCount+from+knowledgeArticle+WHERE+Id = 'kA0A0000000H1xQQ'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
